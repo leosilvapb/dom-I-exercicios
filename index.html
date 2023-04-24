@@ -6,7 +6,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width" />
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css" type="text"/>
   <script src="script.js" defer></script>
 </head>
 
@@ -16,8 +16,11 @@
       <li id="fruta-1"></li>
       <li id="fruta-2"></li>
       <li id="fruta-3"></li>
-      <li id="fruta-4"></li>
+      <li id="fruta-4" oninput="adcionar()"></li>
     </ul>
+    <label for="fruta4">Nova Fruta</label>
+    <input  id="fruta4"  type="text"  name="fruta4" oninput="mostrarNoInput()">
+    <button onclick="adicionar()">Enviar</button>
   </main>
 </body>
 
